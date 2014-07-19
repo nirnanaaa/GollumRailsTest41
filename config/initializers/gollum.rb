@@ -9,7 +9,7 @@ GollumRails::Setup.build do |config|
   # => a relative path: Path.join(RAILS_ROOT, 'db', 'wiki.git')
   # => a symbol (only application) it uses the currently active rails environment configuration for the path
   #
-  config.repository = '/Users/mosny/Documents/wiki.git'
+  config.repository = Rails.root.join("demoapp.git")
 
   # Tells GollumRails to startup.
   # 
