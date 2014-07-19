@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%@pages.each do |page| %>
+      <tr>
+        <td><%=page.name%></td>
+        <td><%=link_to page.name, "/pages/#{page.url}" %></td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
